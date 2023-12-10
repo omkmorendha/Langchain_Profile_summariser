@@ -11,6 +11,9 @@ from langchain.utilities import SerpAPIWrapper
 from pydantic import BaseModel, Field
 from flask import Flask, render_template, request, jsonify
 from typing import Tuple, List
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class CustomSerpAPIWrapper(SerpAPIWrapper):
     def __init__(self):
@@ -118,7 +121,7 @@ def linkedin_lookup_agent(name: str) -> str:
         tools=tools_for_agent,
         llm=llm,
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-        verbose=True,
+        verbose=False,
     )
     prompt_template = PromptTemplate(
         template=template, input_variables=["name_of_person"]
