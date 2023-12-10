@@ -6,14 +6,12 @@ name = "pypi"
 [packages]
 requests = "*"
 langchain = "*"
-black = "*"
-openai = "*"
-install = "*"
-google-search-results = "*"
-tweepy = "*"
 flask = "*"
+python-dotenv = "*"
+openai = "*"
+google-search-results = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
