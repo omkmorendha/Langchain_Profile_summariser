@@ -21,10 +21,14 @@ All of the above steps are carried out by a Langchain agent.
    ```
    pipenv shell
    ```
-   
-3. Then create an enviornmental variable file(.env) and link it
+3. Install necessary libraries
+   ```
+   pipenv install
+   ```
 
-4. Add your API keys for the following APIS:
+4. Then create an enviornmental variable file(.env) and link it
+
+5. Add your API keys for the following APIS:
    1. OpenAI API
    2. SerpAPI
    3. Nebula API
